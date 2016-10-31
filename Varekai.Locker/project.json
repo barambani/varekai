@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "debugType": "portable"
+  },
+  "dependencies": {
+      "Rx-Core": "2.2.5",
+      "Rx-Interfaces": "2.2.5",
+      "Rx-Linq": "2.2.5",
+      "Rx-Main": "2.2.5",
+      "Rx-PlatformServices": "2.2.5",
+      "varekai.utils": { "target": "project" }
+  },
+  "frameworks": {
+    "netstandard1.6": {
+      "dependencies": {
+        "NETStandard.Library": "1.6.0"
+      }
+    }
+  }
+}

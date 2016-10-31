@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace Varekai.Utils
 {
@@ -18,18 +19,16 @@ namespace Varekai.Utils
                 && !cancellation.IsCancellationRequested
                 && (!times.HasValue || times.Value <= counter))
             {
-
                 try
                 {
                     toRetry();
                     succeded = true;
                 }
                 catch (Exception ex)
-
                 {
                     if (onException != null) onException(ex);
 
-                    Thread.Sleep(intervalBetweenRetriesMillis);
+                    Task.Delay(intervalBetweenRetriesMillis); 
                 }
 
                 counter++;

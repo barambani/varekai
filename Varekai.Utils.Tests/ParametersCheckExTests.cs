@@ -7,7 +7,7 @@ namespace Varekai.Utils.Tests
 	[TestFixture]
 	public class ParametersCheckExTests
 	{
-		[Test]
+		[Fact]
         [Description(
             "GIVEN a number as a string" +
             "WHEN converted to int" +
@@ -17,7 +17,7 @@ namespace Varekai.Utils.Tests
             Assert.AreEqual ((int)5672, "5672".CastFromTo<string, int> ());
 		}
 
-		[Test]
+		[Fact]
         [Description(
             "GIVEN a bool as a string" +
             "WHEN converted to bool" +
@@ -27,7 +27,7 @@ namespace Varekai.Utils.Tests
             Assert.AreEqual (true, "true".CastFromTo<string, bool> ());
 		}
 
-		[Test]
+		[Fact]
         [Description(
             "GIVEN a decimal number as a string" +
             "WHEN converted to double" +
@@ -37,7 +37,7 @@ namespace Varekai.Utils.Tests
             Assert.AreEqual ((double)5672, "5672".CastFromTo<string, double> ());
 		}
 
-		[Test]
+		[Fact]
         [Description(
             "GIVEN a text" +
             "WHEN converted to int" +
@@ -50,7 +50,7 @@ namespace Varekai.Utils.Tests
             );
 		}
 
-		[Test]
+		[Fact]
         [Description(
             "GIVEN a text" +
             "WHEN converted to bool" +
@@ -63,7 +63,7 @@ namespace Varekai.Utils.Tests
             );
 		}
 
-		[Test]
+		[Fact]
         [Description(
             "GIVEN a null string" +
             "WHEN tested to make sure is not null" +
@@ -78,7 +78,7 @@ namespace Varekai.Utils.Tests
             );
 		}
 
-		[Test]
+		[Fact]
         [Description(
             "GIVEN a text" +
             "WHEN tested to make sure is not null" +

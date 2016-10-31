@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "debugType": "portable"
+  },
+  "dependencies": {
+      "Autofac": "3.5.2",
+      "Newtonsoft.Json": "7.0.1",
+      "Serilog": "1.5.12",
+      "Topshelf": "3.2.0",
+      "Topshelf.Autofac": "1.0.0",
+      "Topshelf.Linux": "1.0.12.11",
+      "Topshelf.Serilog": "3.2.0",
+      "varekai.utils": { "target": "project" },
+      "varekai.locker": { "target": "project" }
+  },
+  "frameworks": {
+    "netstandard1.6": {
+      "dependencies": {
+        "NETStandard.Library": "1.6.0"
+      }
+    }
+  }
+}

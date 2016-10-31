@@ -1,11 +1,14 @@
 # Build and temp folders
+########################
 [Bb]in/
 [Oo]bj/
 
 # mstest test results
+#####################
 TestResults
 
 #Solution and projects
+######################
 *.sln.cache
 *.suo
 *.userprefs
@@ -13,6 +16,7 @@ TestResults
 *.user
 
 # Build results
+###############
 [Dd]ebug/
 [Rr]elease/
 x64/
@@ -36,11 +40,18 @@ x64/
 *.vssscc
 .builds
 
+#dotnet core
+############
+project.lock.json
+.vscode/
+
 #Nuget packages
+###############
 /packages/
 !packages/repositories.config
 
 # DotCover
+##########
 *.dotCover
 
 # Compiled source #
