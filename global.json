@@ -6,6 +6,6 @@
 		"Varekai.Utils",
 		"ServiceInfrastructureHelper.Tests",
 		"Varekai.Locker.Tests",
-		"Varekai.Utils.Tests"	
+		"Varekai.Utils.Tests"
 	]
 }

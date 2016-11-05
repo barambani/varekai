@@ -1,10 +1,8 @@
 ﻿using System;
-using NUnit.Framework;
-using Varekai.Utils;
+using Xunit;
 
 namespace Varekai.Utils.Tests
 {
-	[TestFixture]
 	public class ParametersCheckExTests
 	{
 		[Fact]
@@ -14,7 +12,7 @@ namespace Varekai.Utils.Tests
             "THEN succeeds")]
 		public void ConvertToTypeIntCorrect ()
 		{
-            Assert.AreEqual ((int)5672, "5672".CastFromTo<string, int> ());
+            Assert.Equal((int)5672, "5672".CastFromTo<string, int> ());
 		}
 
 		[Fact]
@@ -24,7 +22,7 @@ namespace Varekai.Utils.Tests
             "THEN succeeds")]
 		public void ConvertToTypeBoolCorrect ()
 		{
-            Assert.AreEqual (true, "true".CastFromTo<string, bool> ());
+            Assert.Equal(true, "true".CastFromTo<string, bool> ());
 		}
 
 		[Fact]
@@ -34,7 +32,7 @@ namespace Varekai.Utils.Tests
             "THEN succeeds")]
 		public void ConvertToTypeDoubleCorrect ()
 		{
-            Assert.AreEqual ((double)5672, "5672".CastFromTo<string, double> ());
+            Assert.Equal((double)5672, "5672".CastFromTo<string, double> ());
 		}
 
 		[Fact]
@@ -44,7 +42,7 @@ namespace Varekai.Utils.Tests
             "THEN throws an exception")]
 		public void ConvertToTypeIntMalformed ()
 		{
-            Assert.Throws<ArgumentException>(
+            Assert.Throws<ArgumentException>()
                 () => "AAAA".CastFromTo<string, int> ("testParam"),
                 "The parameter testParam with value AAAA cannot be converted to the type System.Int32"
             );
@@ -87,7 +85,7 @@ namespace Varekai.Utils.Tests
 		{
 			"stringNotNull".EnsureIsNotNull ("testArgument");
 
-			Assert.IsTrue (true);
+			Assert.True(true);
 		}
 	}
 }
