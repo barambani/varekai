@@ -1,3 +1,9 @@
+# This repository is ⚰️ ARCHIVED ⚰️
+
+The last day of operation was on November 23, 2022
+
+<br/>
+
 # Varekai
 
 Varekai is a coding excercise. The purpose here is to create a different implementation of the RedLock distributed locking algorithm. It is written in C# using Xamarin Studio and is developed on Mono over Mac OS X.
